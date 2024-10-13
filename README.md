@@ -1,10 +1,20 @@
-# ESP32C3 WiFi UART Monitor
+<h1 align="center">ESP32C3 WiFi UART Monitor</h1>
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Resources](#resources)
+
 
 This project demonstrates how to use the ESP32-C3 microcontroller to monitor UART data over WiFi.
 
 - BPS is set to `115200`.
 - 1 Stop Bit.
 - No parity.
+
+>[!NOTE]
+> The project was generated using the [esp-rs template](https://docs.esp-rs.org/book/writing-your-own-application/generate-project/index.html?highlight=dev%20container).
 
 ## Features
 
