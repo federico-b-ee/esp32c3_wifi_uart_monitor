@@ -80,13 +80,14 @@ fn main() -> ! {
 
     // UART with Interrupts
     // TXD: GPIO21, RXD: GPIO20
+    let rx = io.pins.gpio20;
+    let tx = io.pins.gpio21;
     let config = uart::config::Config::default()
         .rx_fifo_full_threshold(1)
         .baudrate(115200)
         .parity_none()
         .stop_bits(uart::config::StopBits::STOP1);
-    let mut uart =
-        Uart::new_with_config(peripherals.UART1, config, io.pins.gpio21, io.pins.gpio20).unwrap();
+    let mut uart = Uart::new_with_config(peripherals.UART1, config, rx, tx).unwrap();
     uart.set_interrupt_handler(interrupt_handler);
 
     critical_section::with(|cs| {
