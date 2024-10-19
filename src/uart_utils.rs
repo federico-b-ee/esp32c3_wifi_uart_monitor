@@ -17,6 +17,7 @@ impl UARTBuffer {
         }
     }
 
+    #[allow(dead_code)]
     pub fn clear_buffer(&mut self) {
         self.head = 0;
         self.tail = 0;
