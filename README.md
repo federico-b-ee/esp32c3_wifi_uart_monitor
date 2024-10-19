@@ -9,7 +9,7 @@
 
 This project demonstrates how to use the ESP32-C3 microcontroller to monitor UART data over WiFi.
 
-- BPS is set to `115200`.
+- The Baudrate is set to `115200`.
 - 1 Stop Bit.
 - No parity.
 
